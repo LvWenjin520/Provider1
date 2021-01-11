@@ -1,6 +1,7 @@
-package org.lwj.Provider1.test;
+package org.lwj.Provider1.test.service.impl;
 
 import org.apache.dubbo.config.annotation.Service;
+import org.lwj.Provider1.test.service.TestService;
 import org.springframework.stereotype.Component;
 
 @Component

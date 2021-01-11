@@ -8,4 +8,4 @@ dubbo:
     address: zookeeper://139.224.254.0:2181
   scan:
     base-packages:
-      org.lwj.Provider1.test  
+      org.lwj.Provider1.**  
