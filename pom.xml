@@ -67,6 +67,15 @@
 			</exclusion>
 		</exclusions>
 	</dependency>
+	
+	
+	<!-- 接口的依赖 -->
+	<dependency>
+		<groupId>org.lwj</groupId>
+	    <artifactId>Commen-Interface</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	
 	</dependencies>
 	
 	
