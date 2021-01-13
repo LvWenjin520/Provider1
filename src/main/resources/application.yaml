@@ -1,6 +1,12 @@
 server:
   port: 8001
-  
+
+
+spring:
+  profiles:
+    active: test
+
+# 微服务提供者配置
 dubbo:
   application:
     name: Provider1
