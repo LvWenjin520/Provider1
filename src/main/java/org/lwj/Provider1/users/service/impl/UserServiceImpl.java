@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public User getUser(String userName) {
 		// TODO Auto-generated method stub
-		return null;
+		return userDao.getUser(userName);
 	}
 
 	/****
