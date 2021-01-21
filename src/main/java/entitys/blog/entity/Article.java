@@ -1,7 +1,6 @@
 package entitys.blog.entity;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /***
  * 文章的实体类
@@ -13,7 +12,7 @@ public class Article implements Serializable{
 	private String userName;
 	private String title;
 	private String arcitle;
-	private Date createDate;
+	private String createDate;
 	private int clickNum;
 	public int getId() {
 		return id;
@@ -35,10 +34,11 @@ public class Article implements Serializable{
 	public void setArcitle(String arcitle) {
 		this.arcitle = arcitle;
 	}
-	public Date getCreateDate() {
+
+	public String getCreateDate() {
 		return createDate;
 	}
-	public void setCreateDate(Date createDate) {
+	public void setCreateDate(String createDate) {
 		this.createDate = createDate;
 	}
 	public int getClickNum() {
@@ -54,18 +54,19 @@ public class Article implements Serializable{
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public Article(String title, String arcitle, Date createDate, int clickNum) {
+	public Article(int id, String userName, String title, String arcitle, String createDate, int clickNum) {
+		this.id = id;
+		this.userName = userName;
 		this.title = title;
 		this.arcitle = arcitle;
 		this.createDate = createDate;
 		this.clickNum = clickNum;
 	}
-	public Article(int id, String title, String arcitle, Date createDate, int clickNum) {
-		this.id = id;
+	public Article(String userName, String title, String arcitle, String createDate) {
+		this.userName = userName;
 		this.title = title;
 		this.arcitle = arcitle;
 		this.createDate = createDate;
-		this.clickNum = clickNum;
 	}
 	
 	

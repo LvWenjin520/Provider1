@@ -1,6 +1,7 @@
 package services.blog.service;
 
 import java.util.List;
+import java.util.Map;
 
 import entitys.blog.entity.Article;
 
@@ -17,7 +18,7 @@ public interface BlogService {
 	List<Article> getArticleByDate(String userName,String start,String end);
 	
 	//写文章
-	int insertArticle(String title, String article,String date);
+	Map<String,String> insertArticle(String userName,String title, String article);
 	
 	//删除文章
 	int deleteArticle(int uid); 
