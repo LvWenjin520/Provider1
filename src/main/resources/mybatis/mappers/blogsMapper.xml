@@ -7,3 +7,4 @@
 <select id="getArticle" parameterType="String" resultType="Article">
 	select * from testdb.user_article where username = #{userName}
 </select>
+</mapper>
