@@ -17,7 +17,7 @@ public interface BlogDao {
 	List<Article> getArticleByDate(String userName,String start,String end);
 	
 	//写文章
-	int insertArticle(String title, String article,String date);
+	int insertArticle(String userName,String title, String article,String date);
 	
 	//删除文章
 	int deleteArticle(int uid); 

@@ -7,4 +7,11 @@
 <select id="getArticle" parameterType="String" resultType="Article">
 	select * from testdb.user_article where username = #{userName}
 </select>
+
+<insert id="insertArticle" parameterType="String">
+	insert into testdb.user_article 
+	(username,title,article,createdate,clicknum) 
+	values 
+	(#{userName}, #{title}, #{article},str_to_date(#{date}, '%Y-%m-%d %H'),0)
+</insert>
 </mapper>
