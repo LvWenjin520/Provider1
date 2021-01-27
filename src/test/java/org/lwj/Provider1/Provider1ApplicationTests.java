@@ -15,7 +15,7 @@ class Provider1ApplicationTests {
 	
 	@Test
 	void contextLoads() {
-		Map<String, String> result = blog.insertArticle("lwj", "title", "testarticle");
+		Map<String, String> result = blog.deleteArticle(2);
 		System.out.println(result);
 	}
 

@@ -20,7 +20,9 @@ public class BlogServiceImpl implements BlogService {
 	@Autowired
 	BlogDao blogDao;
 	
-	
+	/***
+	 * 获取所有的文章
+	 */
 	@Override
 	public List<Article> getArticle(String userName) {
 		// TODO Auto-generated method stub
@@ -48,10 +50,17 @@ public class BlogServiceImpl implements BlogService {
 		return JsonMsg.faild("save article faild");
 	}
 
+	/***
+	 * 删除文章
+	 */
 	@Override
-	public int deleteArticle(int uid) {
-		// TODO Auto-generated method stub
-		return 0;
+	@Transactional
+	public Map<String,String> deleteArticle(int articleId) {
+		int result = blogDao.deleteArticle(articleId);
+		if(result == 1) {
+			return JsonMsg.success("delete success");
+		}
+		return JsonMsg.faild("delete faild");
 	}
 
 }

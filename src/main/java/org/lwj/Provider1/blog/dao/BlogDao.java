@@ -20,6 +20,6 @@ public interface BlogDao {
 	int insertArticle(String userName,String title, String article,String date);
 	
 	//删除文章
-	int deleteArticle(int uid); 
+	int deleteArticle(int articleId); 
 	
 }
