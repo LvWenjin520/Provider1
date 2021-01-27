@@ -21,7 +21,7 @@ public interface BlogService {
 	Map<String,String> insertArticle(String userName,String title, String article);
 	
 	//删除文章
-	int deleteArticle(int uid); 
+	Map<String,String> deleteArticle(int articleId); 
 	
 
 }
